@@ -14,7 +14,8 @@ public struct SubscriptionProgram {
     public static let oneYearSub = "oneYear"
     
     public static let storeSubscription = IAPManager(productIDs: SubscriptionProgram.productIDs)
-    private static let productIDs: Set<ProductID> = [SubscriptionProgram.oneYearSub]
+    private static let productIDs: Set<ProductID> = [SubscriptionProgram.yearlySub,
+                                                     SubscriptionProgram.oneYearSub]
 }
 
 // 消耗性項目

@@ -98,7 +98,7 @@ extension IAPManager: SKProductsRequestDelegate, ObservableObject {
         productsRequestCompletionHandler?(true, products)
         clearRequestAndHandler()
         for p in products {
-            print("Found product: \(p.productIdentifier) \(p.localizedTitle) \(p.price.floatValue)")
+            print("Found product -> productIdentifier: \(p.productIdentifier) localizedTitle: \(p.localizedTitle) price: \(p.price.floatValue)")
         }
     }
     

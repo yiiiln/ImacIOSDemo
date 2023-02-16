@@ -121,7 +121,7 @@ class MainViewController: UIViewController {
             
             do {
                 let receiptData = try Data(contentsOf: appStoreReceiptURL, options: .alwaysMapped)
-                print(receiptData)
+                print("receiptData: ",receiptData)
                 
                 let receiptString = receiptData.base64EncodedString(options: [])
                 

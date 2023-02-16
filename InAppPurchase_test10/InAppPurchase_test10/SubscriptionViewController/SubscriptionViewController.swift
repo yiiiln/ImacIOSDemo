@@ -89,7 +89,7 @@ class SubscriptionViewController: UIViewController {
                     print("deviceVerificationID: ", AppStore.deviceVerificationID)
                     try? await print("deviceVerificationID: ", AppTransaction.shared.jwsRepresentation)
                 } catch {
-                    print(error)
+                    print("presentAppStore ERROR: ",error)
                 }
             }
         }
